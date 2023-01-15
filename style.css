@@ -1,0 +1,347 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* Cover page of the website */
+.main-Page{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: linear-gradient(118deg, rgba(58, 58, 60, 0.5), rgba(64, 62, 66, 0.5)),url(Images/Main-Page.jpg);
+}   
+
+/* Navbar of the website */
+.navbar{
+    margin: auto;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Logo of the website */
+.logo{
+    cursor: pointer;
+    flex-basis: 50%;
+
+}
+.logo img{
+    height: 80px;
+    margin: 20px 0;
+    border: 1px solid white;
+    width: 100px; 
+    opacity: 95%;
+}
+
+nav,.navbar ul{
+   
+align-items: center;   display: flex;
+
+}
+
+.navbar ul li{
+    cursor: pointer;
+    color: #FFF;
+    list-style: none;
+    margin-right: 50px;
+}
+.navbar ul li a{
+    color:white;
+    text-decoration: none;
+}
+
+button{
+    outline: none;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border: 0;
+    padding: 12px 20px;
+}
+
+/* Content on Main-page */
+.Main-text{
+    text-align: center;
+    position: absolute;
+    color: white;
+    width: 50%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.Main-text h1{
+    font-size: 40px;
+    color:white;
+}
+.Main-text p{
+    font-size: 18px;
+    line-height: 20px;
+    margin: 20px 0 40px;
+}
+.Main-text input{
+    background-color: white;
+    margin: auto;
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+    border-radius: 22px;
+    border: 0;
+    outline: none;    
+}
+.suggested{
+    font-size: 18px !important;
+}
+.suggested a {
+    color: white;
+    text-decoration: none;
+    margin-right: 6p;
+}
+.Line-container{
+    padding: 100%;
+}
+.lines{
+    width: 100;
+    height: 45px;
+    position: relative;
+}
+.lines::after{
+    content: "";
+    position: absolute;
+    margin: auto;
+    height: 1px;
+    background:rgb(118, 114, 114);
+    width: 47%;
+    top: 45%;
+}
+.lines::before{
+    content: "";
+    position: absolute;
+    margin: auto;
+    height: 1px;
+    background:rgb(118, 114, 114);
+    width: 47%;
+    top: 45%;
+}
+.lines::after{
+    left: 0;
+}
+.lines::before{
+    right: 0;
+}
+.circle{
+    height: 35px;
+    width: 35px;
+    border: 2px solid rgb(143, 141, 137);
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+
+}
+
+/* Photo+-stock */
+h1{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    margin: 25px;
+    font-size: 40px;
+
+}
+
+h2{
+    color: rgb(90, 87, 87);
+    text-align: center;
+    font-weight: lighter;
+    margin: 25px;
+    font-size: 30px;
+}
+
+
+#img-gal1{
+    height: 230px;
+    padding: 21px;
+    align-items: center;
+}
+#img-gal2{
+    height: 230px;
+    padding: 21px;
+    align-items: center;
+}
+#img-gal3{
+    height: 230px;
+    padding: 12px;
+    align-items: center;
+}
+
+.Photo-stock :hover img{
+    transform: scale(1.1);
+}
+
+.explore-button{
+    display: block;
+    width: 50%;
+    max-width: 340px;
+    text-decoration: none;
+    background: #7b61ce;
+    color: white;
+    text-align: center;
+    padding: 14px 0;
+    margin: 60px auto;
+    border-radius: 40px;
+    font-size: 19px;
+    trasition: transform 0.4s;
+}
+.explore-button:hover{
+    transform: scale(0.9);
+}
+.container{
+	padding: 30px 9%;
+}
+.container .container-box{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 14px;
+}
+.container .container-box .box{
+	flex: 1 200px;
+	border-radius: 10px;
+	cursor: pointer;
+	background: rgb(56, 153, 214);
+	text-align: center;
+}
+.container .container-box .box img{
+	height: 250px;
+	width: 100%;
+	object-fit: cover;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.container .container-box .box h2{
+	color: rgb(248, 233, 233);
+	margin: 10px 0;
+}
+
+.container .container-box .box p{
+
+	color: rgb(249, 245, 245);
+	font-size: 18px;
+	padding: 5px;
+}
+.heading{
+	color: rgb(16, 16, 17);
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+
+.about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.about p{
+    color: black;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+#about{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px;
+    font-size: 40px;
+}
+
+.contact-parent{
+    background: #fff;
+    display:flex;
+    margin:80px 0;
+}
+.contact-child{
+    display:flex;
+    flex:1;
+    box-shadow:0px 0px 10px -2px rgba(0,0,0,0.75);
+}
+
+.child1{
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("https://i.redd.it/8xq5no6hfve11.jpg");
+    background-size:cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    color:#fff;
+    padding:100px 0;
+}
+.child1 p{
+    padding-left:20%;
+    font-size:20px;
+    text-shadow:0px 0px 2px #000;
+}
+ 
+.child1 p span{
+    font-size:16px;
+    color:#9df2fd;
+}
+.child2{
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+.inside-contact{
+    width:90%;
+    margin:0 auto;
+}
+ 
+.inside-contact h2{
+    text-transform:uppercase;
+    text-align:center;
+    margin-top:50px;
+}
+ 
+.inside-contact h3{
+    text-align:center;
+    font-size:16px;
+    color:#0085e2;
+}
+.inside-contact input, .inside-contact textarea{
+    width:100%;
+    background-color:#eee;
+    border:1px solid rgba(0,0,0,0.48);
+    padding:5px 10px;
+    margin-bottom:20px;
+}
+.inside-contact input[type=submit]{
+    background-color:#000;
+    color:#fff;
+    transition:0.2s;
+    border:2px solid #000;
+    margin:30px 0;
+    border-radius: 20px;
+}
+.inside-contact input[type=submit]:hover{
+    background-color:#fff;
+    color:#000;
+    transition:0.2s;
+}
+.center{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(184, 179, 171);
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    padding-left: 35%;
+}
